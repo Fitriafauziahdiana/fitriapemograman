@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Pengertian",
+      "text": "Rahasia Ahli Kulit Sehat dalam Menjaga Kesehatan Kulit",
+      "penjelasan": "Menjaga kesehatan kulit merupakan kunci kulit cantik alami. Kenali rahasia ahli kulit sehat dalam mendapatkan kulit cantik, bersih, dan sehat. Tahukah Anda? Kulit kita memiliki siklus regenerasi setiap 27 hari dan menyebabkan penumpukan sel kulit mati yang perlu dibersihkan secara teratur dan dijaga kesehatannya. Pasalnya, jika tidak dibersihkan, sel kulit mati yang bercampur dengan keringat, debu, polusi, paparan ac, paparan sinar matahari, dan kotoran dapat memperburuk kondisi kulit Anda. Hasilnya, kulit dapat terlihat kusam dan tidak sehat.",
+      "lanjutan": "Jangan biarkan aktivitas sehari-hari merusak kesehatan kulit Anda. Di bawah ini adalah beberapa cara yang dapat Anda lakukan untuk menjaga kesehatan kulit."
+    },
+    {
+      "id": 2,
+      "name": "Tips 1",
+      "text": "Bersihkan wajah dua kali sehari.",
+      "penjelasan": "Membersihkan kulit wajah merupakan hal yang sangat penting guna menghilangkan bakteri dan kotoran, serta menjaga kesehatan kulit. Terlebih lagi setelah aktivitas seharian dan menggunakan kosmetik.."
+    },
+    {
+      "id": 3,
+      "name": "Tips 2",
+      "text": "Jaga kelembapan kulit Anda",
+      "penjelasan": "Menjaga kelembapan kulit tidak kalah penting dengan membersihkan wajah. Pelembap dapat membantu dalam menjaga kulit agar tidak kering dan melindunginya dari cuaca atau faktor lingkungan yang dapat merusak kulit Anda.",
+      "lanjutan": "Selain itu, ahli kulit sehat juga menyatakan bahwa memberikan pelembap pada wajah juga dapat membantu kulit mempertahankan tingkat kelembapan alaminya.,"
+    },
+    {
+      "id": 4,
+      "name": "Tips 3",
+      "text": "Berikan kulit Anda perlindungan terhadap matahari.",
+      "penjelasan": "Melindungi kulit dari sinar matahari merupakan hal yang sangat penting, sekalipun Anda tidak beraktivitas di bawah matahari terik. Penting diketahui, sinar matahari dapat merusak lapisan kulit Anda dan dapat membuatnya terlihat kusam, keriput, dan masalah kulit lainnya. ",
+       "lanjutan": "Gunakan krim pelindung sinar matahari atau tabir surya, meski saat cuaca mendung, setidaknya dengan SPF 15. Setidaknya, gunakan tabir surya 15-20 menit sebelum Anda keluar ruangan, juga dua jam sesudahnya bila Anda masih terekspos di bawah sinar matahari.,"
+    },
+    {
+      "id": 5,
+      "name": "Tips 4",
+      "text": "Rahasia Ahli Kulit Sehat Ada Pada Kandungan Perawatan Kulit Anda",
+      "penjelasan": "Guna menjaga kesehatan kulit, Anda tidak hanya perlu membersihkan kulit secara teratur. Anda juga perlu memerhatikan kandungan yang ada pada produk perawatan kulit Anda.  ",
+      "lanjutan": "Ahli kulit sehat menyatakan bahwa pembersih dan perawatan kulit yang baik adalah yang tidak merusak kondisi kulit Anda dan dapat mengembalikan kelembapan alami kulit."
+    },
+    {
+        "id": 6,
+        "name": "Tips 5",
+        "text": "Pembersih",
+        "penjelasan": "Pembersih yang baik adalah yang tidak merusak lapisan kulit. Gunakanlah pembersih wajah dengan bahan ringan, mengandung stearyl alcohol sehingga busa tidak berlebih,",
+        "lanjutan": "tidak berwarna, dan tidak berbau atau mengandung parfum. Hal ini dimaksudkan agar dapat menjaga kesehatan kulit dengan baik dan tidak menimbulkan iritasi."
+      },
+      {
+        "id": 7,
+        "name": "Tips 6",
+        "text": "Pelembap kulit",
+        "penjelasan": "Bagi Anda yang memiliki kulit kering, gunakanlah pelembap kulit yang mengandung dimethicone, sodium PCA, shea butter, panthenol, ceramide, dan cyclopentasiloxane. Bahan-bahan ini memiliki kandungan yang sangat baik untuk mengatasi masalah kulit kering, anti radang, pelindung kulit terhadap sinar matahari, dan tidak mengiritasi kulit.",
+        "lanjutan": "Sementara, untuk Anda yang memiliki  kulit normal, Anda dapat menggunakan pelembap dengan kandungan cylomethicone. Dan bagi Anda yang memiliki kulit berminyak, bisa menggunakan pelembap kulit dengan berbahan dasar air."
+      }
+  ]
