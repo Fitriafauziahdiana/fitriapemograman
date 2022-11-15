@@ -65,7 +65,7 @@ class _sehatState extends State<sehat> {
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "    Tips ulit Sehat",
+                      "      Tips ulit Sehat",
                       style: TextStyle(
                           color: Color.fromARGB(255, 131, 78, 0),
                           fontSize: 12,

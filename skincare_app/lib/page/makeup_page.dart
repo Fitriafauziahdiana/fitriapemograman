@@ -65,7 +65,7 @@ class _makeupState extends State<makeup> {
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "    Tips Makeup Sederhana",
+                      "      Tips Makeup Sederhana",
                       style: TextStyle(
                           color: Color.fromARGB(255, 131, 78, 0),
                           fontSize: 12,

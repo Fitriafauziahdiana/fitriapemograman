@@ -65,12 +65,19 @@ class _serumState extends State<serum> {
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "     Rekomendasi serum",
+                      "      Rekomendasi",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 12,
                           fontWeight: FontWeight.bold),
-                    )
+                    ),
+                    Text(
+                      "      Product",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ],
                 ),
               ),

@@ -51,14 +51,14 @@ class _basicskincareState extends State<basicskincare> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      " Basic Skin",
+                      "  Basic Skin",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "   Penjelasan Skin Barrier",
+                      "      Penjelasan Skin Barrier",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 12,
