@@ -41,7 +41,7 @@ class _sehatState extends State<sehat> {
               child: Container(
                 margin: EdgeInsets.only(top: 10),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(100),
                   color: Color.fromARGB(255, 255, 255, 255),
                 ),
                 height: 163,
@@ -51,21 +51,21 @@ class _sehatState extends State<sehat> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "  Healty",
+                      "   Healty",
                       style: TextStyle(
                           color: Color.fromARGB(255, 131, 78, 0),
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "  Skin",
+                      "   Skin",
                       style: TextStyle(
                           color: Color.fromARGB(255, 131, 78, 0),
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "      Tips ulit Sehat",
+                      "        Tips ulit Sehat",
                       style: TextStyle(
                           color: Color.fromARGB(255, 131, 78, 0),
                           fontSize: 12,
@@ -164,9 +164,9 @@ class _sehatState extends State<sehat> {
                                                       .penjelasan
                                                       .toString(),
                                                   style: TextStyle(
-                                                      fontSize: 14,
+                                                      fontSize: 16,
                                                       fontStyle:
-                                                          FontStyle.italic),
+                                                          FontStyle.normal),
                                                 ),
                                               ),
                                               Padding(
@@ -177,7 +177,7 @@ class _sehatState extends State<sehat> {
                                                       .lanjutan
                                                       .toString(),
                                                   style: TextStyle(
-                                                    fontSize: 12,
+                                                    fontSize: 16,
                                                   ),
                                                 ),
                                               )

@@ -45,7 +45,7 @@ class _MenuPageState extends State<MenuPage> {
                   alignment: Alignment.center,
                   child: Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(65),
+                      borderRadius: BorderRadius.circular(100),
                       color: Color.fromARGB(255, 64, 34, 0),
                     ),
                     height: 163,
@@ -55,24 +55,24 @@ class _MenuPageState extends State<MenuPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          " MENU",
+                          "    MENU",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 37,
+                              fontSize: 30,
                               fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          "        Education Of",
+                          "            Education Of",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 12,
+                              fontSize: 10,
                               fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          "        Skin Barrier",
+                          "            Skin Barrier",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 12,
+                              fontSize: 10,
                               fontWeight: FontWeight.bold),
                         )
                       ],

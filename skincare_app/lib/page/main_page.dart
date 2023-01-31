@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:skincare_app/model/model_basic_skin.dart';
+import 'package:skincare_app/page/listapi_page.dart';
 import 'package:skincare_app/page/consul_page.dart';
 import 'package:skincare_app/page/datasql_page.dart';
 import 'package:skincare_app/page/home_page.dart';
@@ -21,6 +22,7 @@ class _MainPageState extends State<MainPage> {
     MenuPage(),
     ConsulPage(),
     DataSqlPage(),
+    ApilistPage(),
   ];
 
   @override
@@ -40,23 +42,28 @@ class _MainPageState extends State<MainPage> {
         items: const [
           Image(
             image: AssetImage("assets/images/icon6.png"),
-            height: 60,
-            width: 60,
+            height: 40,
+            width: 40,
           ),
           Image(
             image: AssetImage("assets/images/icon7.png"),
-            height: 60,
-            width: 60,
+            height: 40,
+            width: 40,
           ),
           Image(
             image: AssetImage("assets/images/icon8.png"),
-            height: 60,
-            width: 60,
+            height: 40,
+            width: 40,
           ),
           Image(
             image: AssetImage("assets/images/icon9.png"),
-            height: 60,
-            width: 60,
+            height: 40,
+            width: 40,
+          ),
+          Image(
+            image: AssetImage("assets/images/icon10.png"),
+            height: 40,
+            width: 40,
           ),
         ],
       ),

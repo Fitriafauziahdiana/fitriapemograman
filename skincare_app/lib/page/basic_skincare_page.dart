@@ -41,7 +41,7 @@ class _basicskincareState extends State<basicskincare> {
               child: Container(
                 margin: EdgeInsets.only(top: 10),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(100),
                   color: Color.fromARGB(255, 131, 78, 0),
                 ),
                 height: 163,
@@ -58,7 +58,7 @@ class _basicskincareState extends State<basicskincare> {
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "      Penjelasan Skin Barrier",
+                      "       Penjelasan Skin Barrier",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 12,
@@ -155,9 +155,9 @@ class _basicskincareState extends State<basicskincare> {
                                                       .penjelasan
                                                       .toString(),
                                                   style: TextStyle(
-                                                      fontSize: 14,
+                                                      fontSize: 16,
                                                       fontStyle:
-                                                          FontStyle.italic),
+                                                          FontStyle.normal),
                                                 ),
                                               ),
                                               Padding(
@@ -168,7 +168,7 @@ class _basicskincareState extends State<basicskincare> {
                                                       .lanjutan
                                                       .toString(),
                                                   style: TextStyle(
-                                                    fontSize: 12,
+                                                    fontSize: 16,
                                                   ),
                                                 ),
                                               )

@@ -61,7 +61,7 @@ class _ConsulPageState extends State<ConsulPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        leading: new Icon(Icons.list),
+        leading: BackButton(color: Color.fromARGB(255, 255, 255, 255)),
         title: new Text("Formulir Konsultasi"),
         backgroundColor: Color.fromARGB(255, 69, 44, 0),
       ),
@@ -140,10 +140,10 @@ class _ConsulPageState extends State<ConsulPage> {
                 new Row(
                   children: <Widget>[
                     new Text(
-                      "Kepuasan",
+                      "Kepuasan   :   ",
                       style: new TextStyle(
-                        fontSize: 12.0,
-                        color: Color.fromARGB(255, 69, 44, 0),
+                        fontSize: 15,
+                        color: Color.fromARGB(255, 1, 1, 0),
                       ),
                     ),
                     new DropdownButton(
@@ -171,18 +171,20 @@ class _ConsulPageState extends State<ConsulPage> {
                   },
                   child: const Text(
                     'Klik Submit Jika Selesai',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.black, fontSize: 15),
                   ),
                 ),
                 ElevatedButton(
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all<Color>(
-                      Color.fromARGB(255, 69, 44, 0),
-                    )),
-                    onPressed: () {
-                      submit();
-                    },
-                    child: Text(''))
+                  style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll<Color>(
+                        Color.fromARGB(255, 69, 44, 0)),
+                  ),
+                  child: const Text('SUBMIT'),
+                  onPressed: () {
+                    submit();
+                    // ...
+                  },
+                ),
               ],
             ),
           ),

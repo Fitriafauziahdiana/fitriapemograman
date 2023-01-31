@@ -41,7 +41,7 @@ class _maskerState extends State<masker> {
               child: Container(
                 margin: EdgeInsets.only(top: 10),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(100),
                   color: Color.fromARGB(255, 131, 78, 0),
                 ),
                 height: 163,
@@ -51,21 +51,21 @@ class _maskerState extends State<masker> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "  Natural",
+                      "    Natural",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "  Mask",
+                      "    Mask",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "     Rekomendasi Masker",
+                      "          Rekomendasi Masker",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 12,
@@ -162,9 +162,9 @@ class _maskerState extends State<masker> {
                                                       .penjelasan
                                                       .toString(),
                                                   style: TextStyle(
-                                                      fontSize: 14,
+                                                      fontSize: 16,
                                                       fontStyle:
-                                                          FontStyle.italic),
+                                                          FontStyle.normal),
                                                 ),
                                               ),
                                               Padding(
@@ -175,7 +175,7 @@ class _maskerState extends State<masker> {
                                                       .lanjutan
                                                       .toString(),
                                                   style: TextStyle(
-                                                    fontSize: 12,
+                                                    fontSize: 16,
                                                   ),
                                                 ),
                                               )
