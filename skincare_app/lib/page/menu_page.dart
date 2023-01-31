@@ -24,7 +24,7 @@ class _MenuPageState extends State<MenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(230, 255, 212, 162),
+      backgroundColor: Color.fromARGB(230, 255, 255, 255),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

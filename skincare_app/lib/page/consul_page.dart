@@ -8,106 +8,185 @@ class ConsulPage extends StatefulWidget {
 }
 
 class _ConsulPageState extends State<ConsulPage> {
+  List<String> Kepuasan = [
+    "Sangat Baik",
+    "Cukup Baik",
+    "Baik",
+    "Kurang Baik",
+    "Tidak Baik"
+  ];
+  String _Kepuasan = "Sangat Baik";
+
+  String _dds = "";
+
+  TextEditingController controllerNama = new TextEditingController();
+  TextEditingController controllerNomor = new TextEditingController();
+  TextEditingController controllerEmail = new TextEditingController();
+  TextEditingController controllerKeluhan = new TextEditingController();
+
+  void _pilihDds(String value) {
+    setState(() {
+      _dds = value;
+    });
+  }
+
+  void pilihKepuasan(String value) {
+    setState(() {
+      _Kepuasan = value;
+    });
+  }
+
+  void submit() {
+    AlertDialog alertDialog = new AlertDialog(
+      content: new Container(
+        height: 200.0,
+        child: new Column(
+          children: <Widget>[
+            new Text("Nama Lengkap : ${controllerNama.text}"),
+            new Text("Nomor Telpon : ${controllerNomor.text}"),
+            new Text("Alamat Email : ${controllerEmail.text}"),
+            new Text("Keluhan Yang Dialami : ${controllerKeluhan.text}"),
+            new TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: new Text("Oke", style: TextStyle(color: Colors.black)),
+            )
+          ],
+        ),
+      ),
+    );
+    showDialog(context: context, builder: (_) => alertDialog);
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(top: 120, left: 24, right: 24),
-        child: Center(
-          child: Column(
-            children: [
-              Text(
-                'FORMULIR KONSULTASI',
-                style: TextStyle(fontSize: 20),
-              ),
-              Text(
-                'Isikan Data Informasi Diri dan Keluhan Yang Di Alami',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 17),
-              ),
-              SizedBox(height: 20),
-              Column(
-                children: [
-                  TextFormField(
-                    decoration: InputDecoration(
-                      fillColor: Color(0xffF1F0F5),
-                      filled: true,
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(),
+    return new Scaffold(
+      appBar: new AppBar(
+        leading: new Icon(Icons.list),
+        title: new Text("Formulir Konsultasi"),
+        backgroundColor: Color.fromARGB(255, 69, 44, 0),
+      ),
+      body: new ListView(
+        children: <Widget>[
+          new Container(
+            padding: new EdgeInsets.all(10.0),
+            child: new Column(
+              children: <Widget>[
+                new TextField(
+                  controller: controllerNama,
+                  decoration: new InputDecoration(
+                      hintText: "Nama Lengkap",
+                      labelText: "Nama Lengkap",
+                      border: new OutlineInputBorder(
+                          borderRadius: new BorderRadius.circular(20.0))),
+                ),
+                new Padding(
+                  padding: new EdgeInsets.only(top: 20.0),
+                ),
+                new TextField(
+                  controller: controllerNomor,
+                  decoration: new InputDecoration(
+                      hintText: "Nomor Telepon",
+                      labelText: "Nomor Telepon",
+                      border: new OutlineInputBorder(
+                          borderRadius: new BorderRadius.circular(20.0))),
+                ),
+                new Padding(
+                  padding: new EdgeInsets.only(top: 20.0),
+                ),
+                new TextField(
+                  controller: controllerEmail,
+                  decoration: new InputDecoration(
+                      hintText: "Alamat Email",
+                      labelText: "Alamat Email",
+                      border: new OutlineInputBorder(
+                          borderRadius: new BorderRadius.circular(20.0))),
+                ),
+                new Padding(
+                  padding: new EdgeInsets.only(top: 20.0),
+                ),
+                new TextField(
+                  maxLines: 10,
+                  controller: controllerKeluhan,
+                  decoration: new InputDecoration(
+                      hintText: "Keluhan Yang Dialami",
+                      labelText: "Keluhan Yang Dialami",
+                      border: new OutlineInputBorder(
+                          borderRadius: new BorderRadius.circular(20.0))),
+                ),
+                new Padding(
+                  padding: new EdgeInsets.only(top: 20.0),
+                ),
+                new RadioListTile(
+                  value: "Data Sudah Sesuai",
+                  groupValue: _dds,
+                  onChanged: (value) {
+                    _pilihDds(value!);
+                  },
+                  activeColor: Color.fromARGB(255, 69, 44, 0),
+                  subtitle: new Text("Pilih Jika Anda Sudah Mengisi Formulir"),
+                ),
+                new RadioListTile(
+                  value: "Data Belum Sesuai",
+                  groupValue: _dds,
+                  onChanged: (value) {
+                    _pilihDds(value!);
+                  },
+                  activeColor: Color.fromARGB(255, 69, 44, 0),
+                  subtitle: new Text("Pilih Jika Anda Belum Mengisi Formulir"),
+                ),
+                new Padding(
+                  padding: new EdgeInsets.only(top: 20.0),
+                ),
+                new Row(
+                  children: <Widget>[
+                    new Text(
+                      "Kepuasan",
+                      style: new TextStyle(
+                        fontSize: 12.0,
+                        color: Color.fromARGB(255, 69, 44, 0),
                       ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(),
-                      ),
-                      labelText: 'Nama Lengkap*',
                     ),
+                    new DropdownButton(
+                      value: _Kepuasan,
+                      items: Kepuasan.map((value) {
+                        return new DropdownMenuItem(
+                          value: value,
+                          child: new Text(value),
+                        );
+                      }).toList(),
+                      onChanged: (String? value) {
+                        pilihKepuasan(value!);
+                      },
+                    )
+                  ],
+                ),
+                new Padding(
+                  padding: new EdgeInsets.only(top: 20.0),
+                ),
+                TextButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                        content: Text('Submit',
+                            style: TextStyle(color: Colors.white))));
+                  },
+                  child: const Text(
+                    'Klik Submit Jika Selesai',
+                    style: TextStyle(color: Colors.black),
                   ),
-                ],
-              ),
-              SizedBox(height: 20),
-              Column(
-                children: [
-                  TextFormField(
-                    decoration: InputDecoration(
-                      fillColor: Color(0xffF1F0F5),
-                      filled: true,
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(),
-                      ),
-                      labelText: 'Alamat Email*',
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20),
-              Column(
-                children: [
-                  TextFormField(
-                    decoration: InputDecoration(
-                      fillColor: Color(0xffF1F0F5),
-                      filled: true,
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(),
-                      ),
-                      labelText: 'Nomor Telepon*',
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20),
-              Column(
-                children: [
-                  TextFormField(
-                    decoration: InputDecoration(
-                      fillColor: Color(0xffF1F0F5),
-                      filled: true,
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(),
-                      ),
-                      labelText: 'Keluhan Yang Dirasa*',
-                    ),
-                  ),
-                ],
-              ),
-            ],
+                ),
+                ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                      Color.fromARGB(255, 69, 44, 0),
+                    )),
+                    onPressed: () {
+                      submit();
+                    },
+                    child: Text(''))
+              ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

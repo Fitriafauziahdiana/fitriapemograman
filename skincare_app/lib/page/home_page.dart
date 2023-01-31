@@ -68,6 +68,7 @@ class _HomePageState extends State<HomePage> {
                           curve: Curves.ease);
                     },
                     style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 69, 44, 0),
                       shape: const CircleBorder(),
                     ),
                     child: Image.asset(
@@ -97,8 +98,8 @@ class Dotindicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 300),
-      height: isActive ? 12 : 4,
-      width: 4,
+      height: isActive ? 2 : 4,
+      width: 2,
       decoration: BoxDecoration(
           color: Color.fromARGB(255, 69, 44, 0),
           borderRadius: const BorderRadius.all(Radius.circular(12))),

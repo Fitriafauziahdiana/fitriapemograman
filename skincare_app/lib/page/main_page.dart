@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:skincare_app/model/model_basic_skin.dart';
 import 'package:skincare_app/page/consul_page.dart';
+import 'package:skincare_app/page/datasql_page.dart';
 import 'package:skincare_app/page/home_page.dart';
 import 'package:skincare_app/page/menu_page.dart';
 
@@ -15,7 +16,12 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   var _Page = 0;
-  final pages = [HomePage(), MenuPage(), ConsulPage()];
+  final pages = [
+    HomePage(),
+    MenuPage(),
+    ConsulPage(),
+    DataSqlPage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +50,11 @@ class _MainPageState extends State<MainPage> {
           ),
           Image(
             image: AssetImage("assets/images/icon8.png"),
+            height: 60,
+            width: 60,
+          ),
+          Image(
+            image: AssetImage("assets/images/icon9.png"),
             height: 60,
             width: 60,
           ),
